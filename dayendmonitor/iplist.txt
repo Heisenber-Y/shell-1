@@ -1,0 +1,8 @@
+#format:ip,password,script.used for check dayend, you alse need another file named $IP_config.txt
+192.168.8.6,***,/app/fis/checkdayend_all_main.sh
+192.168.6.1,***,/export/home/fis/checkdayend_all_main.sh
+192.168.8.1,***,/export/home/fis/checkdayend_all_main.sh
+192.168.8.70,***,/export/home/fis/checkdayend_all_main.sh
+192.168.8.98,***,/export/home/fis/checkdayend_all_main.sh
+200.31.157.214,***,/arch/comstar/checkdayenda.sh
+200.31.154.30,***,/arch/comstar/checkdayendb.sh
