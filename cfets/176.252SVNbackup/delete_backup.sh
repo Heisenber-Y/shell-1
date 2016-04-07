@@ -29,8 +29,8 @@ function main {
 
 echo `date`
 
-find $DIR -type f -wholename *.tar.gz > $HOME/file.dat   
-LOOP=`cat $HOME/file.dat` 
+find $DIR -type f -wholename *.tar.gz > $HOME/file.dat
+LOOP=`cat $HOME/file.dat`
 for FILE in $LOOP
 do
     echo "file=$FILE" >> $LOGFILE
@@ -40,8 +40,8 @@ do
     DAY=`date -d $DATE +%d`
     MONTH=`date -d $DATE +%m`
     YEAR=`date -d $DATE +%Y`
-	
-    if [[ $((10#$WEEK)) -ne 6 ]] && [[ ${MONTH}$((10#$DAY)) != ${CURMONTH}1 ]] 
+
+    if [[ $((10#$WEEK)) -ne 6 ]] && [[ ${MONTH}$((10#$DAY)) != ${CURMONTH}1 ]]
     then
 	    rm -f $FILE
     elif [[ $((10#$WEEK)) -eq 6 ]] && [[ ${MONTH}$((10#$day)) != ${CURMONTH}1 ]]
