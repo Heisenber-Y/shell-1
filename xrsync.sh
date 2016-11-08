@@ -1,5 +1,5 @@
 ######################################################################
-# Copyright (C) 2015 Faurecia (China) Holding Co.,Ltd.               #
+# Copyright (C) 2015 Canux CHENG.                                    #
 # All rights reserved                                                #
 # Name: rsync.sh
 # Author: canuxcheng@gmail.com                                       #
@@ -34,7 +34,7 @@ do
 			echo "From company or home to harddrive."
 			read -p "Enter Y/y to confirm: " res
 			if [[ $res = Y ]] || [[ $res = y ]]
-			then 
+			then
 			    rsync -avzrPH /home/$USER/Share/Share /media/$USER/Z
 			    exit 0
 			else
@@ -45,7 +45,7 @@ do
 			echo "From harddrive to company or home."
 			read -p "Enter Y/y to confirm: " res
 			if [[ $res = Y ]] || [[ $res = y ]]
-			then 
+			then
 				cd /media/$USER/Z/Share
 			    rsync -avzrPH /media/$USER/Z/Share /home/$USER/Share
 			    exit 0
